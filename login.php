@@ -3,7 +3,7 @@ ob_start();
 session_start(); 
 require_once 'dbconnect.php';
 require_once __DIR__ . '/Facebook/autoload.php';
-// if session is set direct to index
+///// if session is set direct to index
 if (isset($_SESSION['user'])) {
     header("Location: index.php");
     exit;
